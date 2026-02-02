@@ -66,5 +66,10 @@ document.querySelectorAll('input[type="radio"]').forEach(radio => {
 });
 
 document.getElementById('fechamax').addEventListener('change', calcularPrecio);
+const form = document.querySelector('form');
+form.addEventListener('submit', e => {
+  if (!form.checkValidity()) { e.preventDefault(); form.reportValidity(); return; }
+  alert('Gracias por tu comision! Revisaré tu formulario y me pondré en contacto contigo pronto.');
+});
 
 
