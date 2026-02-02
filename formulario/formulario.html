@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="././estilos.css">
+        <title>Formulario comisiones</title>
+    </head>
+    <body>
+        <audio src="./audios/22. Glowing Snow (DELTARUNE Chapter 3+4 Soundtrack) - Toby Fox.mp3" autoplay loop></audio>
+        <div id="encabezado">
+            <img src="./img/icono_gif.gif" alt="icono" id="icono_gif">
+        <h1>Estado: comisiones abiertas.</h1>
+        <p>Hola soy Lenny! rellena el formulario si estás interesado en comisionarme.</p>
+        </div>
+        
+        
+        <form action="">
+            <label for="tipo_dib">Tipo de dibujo</label><br>
+            <input type="radio" name="tipo_dib" id="full_col" value="Full-Color" data-price="5">
+            <label for="full_col">Full-Color</label><br>
+            <input type="radio" name="tipo_dib" id="sketch" value="sketch" data-price="10">
+            <label for="sketch">Sketch</label><br><br>
+
+            <label for="tamaño">Tamaño del dibujo</label><br>
+            <input type="radio" name="tamaño" id="icono" value="icono" data-price="10">
+            <label for="icono">Icono</label><br>
+            <input type="radio" name="tamaño" id="medio" value="medio cuerpo" data-price="15">
+            <label for="medio">Medio cuerpo</label><br>
+            <input type="radio" name="tamaño" id="cuer_comp" value="cuerpo completo" data-price="25">
+            <label for="cuer_comp">Cuerpo completo</label><br><br>
+
+            <label for="referencia">Referencia visual</label><br>
+            <input type="file" name="referencia" id="referencia" accept="image/*" required><br><br>
+
+            <label for="detalles">Detalles del dibujo:</label><br>
+            <input type="text" name="detalles" id="detalles" required><br><br>
+
+
+            <label for="fechamax">Fecha de entrega (opcional, mínimo una semana)</label><br><br>
+            <input type="date" id="fechamax" name="fechamax"><br><br>
+
+            <label for="email">Correo electrónico para el pago:</label><br>
+            <input type="email" name="email" id="email" value="email"><br><br>
+
+            <input type="submit" id="submit" value="Enviar">
+            <input type="reset" id="reset" value="Reset">
+            <p id="precio-total">Precio estimado: $0 (suceptible a cambios)</p>
+        </form>
+        
+        <script src="./script.js"></script>
+    </body>
+</html>
